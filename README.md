@@ -57,9 +57,9 @@ Incluye ejemplos de:
 
 2. Abrí tu gestor SQL favorito
 
-3. Ejecutá el script `ddl/create_tables.sql` para crear las tablas
+3. Ejecutá el script `create_tables.sql` para crear las tablas
 
-4. Insertá datos ficticios con `dml/insert_data.sql`
+4. Insertá datos ficticios con `insert_data.sql`
 
 5. Ejecutá las consultas desde `queries/reportes.sql` o armá las tuyas
 
