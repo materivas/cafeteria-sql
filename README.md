@@ -15,15 +15,11 @@ Este proyecto tiene como objetivo modelar, diseñar e implementar una base de da
 
 ## 🛠️ Tecnologías utilizadas
 
-- **MySQL / PostgreSQL / SQLite** (elegí según con cuál trabajes)
+- **MySQL** 
 - SQL puro
-- Diagrama E-R (Hecho con [dbdiagram.io](https://dbdiagram.io), DrawSQL, Lucidchart, etc.)
+- Diagrama E-R
 - Git y GitHub para versionado
-
----
-
-## 🧱 Estructura del proyecto
-
+  
 ---
 
 ## 📋 Modelo de Datos
@@ -61,7 +57,7 @@ Incluye ejemplos de:
 
 4. Insertá datos ficticios con `insert_data.sql`
 
-5. Ejecutá las consultas desde `queries/reportes.sql` o armá las tuyas
+5. Ejecutá las consultas desde `queries.sql` o armá las tuyas
 
 ---
 
