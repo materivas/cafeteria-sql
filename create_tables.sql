@@ -1,14 +1,14 @@
 -- Se elimina si existen las tablas
-DROP TABLES IF EXISTS producto;
-DROP TABLES IF EXISTS pedido;
-DROP TABLES IF EXISTS cliente;
-DROP TABLES IF EXISTS empleado;
+DROP TABLES IF EXISTS productos;
+DROP TABLES IF EXISTS pedidos;
+DROP TABLES IF EXISTS clientes;
+DROP TABLES IF EXISTS empleados;
 DROP TABLES IF EXISTS detalle_pedido;
-DROP TABLES IF EXISTS metodo_pago;
+DROP TABLES IF EXISTS metodos_pago;
 
 
 -- Clientes
-CREATE TABLE IF NOT EXISTS cliente(
+CREATE TABLE IF NOT EXISTS clientes(
 	id_cliente INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     email VARCHAR(100) UNIQUE,
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS cliente(
 );
 
 -- Empleado
-CREATE TABLE IF NOT EXISTS empleado(
+CREATE TABLE IF NOT EXISTS empleados(
 	id_empleado INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     puesto VARCHAR(50),
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS empleado(
 );
 
 -- Producto
-CREATE TABLE IF NOT EXISTS producto(
+CREATE TABLE IF NOT EXISTS productos(
 	id_producto INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     precio DECIMAL(10,2) NOT NULL,
@@ -34,13 +34,13 @@ CREATE TABLE IF NOT EXISTS producto(
 );
 
 -- Metodo de Pago
-CREATE TABLE IF NOT EXISTS metodo_pago(
+CREATE TABLE IF NOT EXISTS metodos_pago(
 	id_metodo INT AUTO_INCREMENT PRIMARY KEY,
     descripcion VARCHAR(100) NOT NULL
 );
 
 -- Pedidos
-CREATE TABLE IF NOT EXISTS pedido(
+CREATE TABLE IF NOT EXISTS pedidos(
 	id_pedido INT AUTO_INCREMENT PRIMARY KEY,
     id_cliente INT,
     id_empleado INT,
